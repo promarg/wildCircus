@@ -1,0 +1,51 @@
+
+<div class="row">
+
+<div class="card mx-auto my-4"  *ngFor="let sessions of session" style="width: 18rem;">
+  <ul  class="list-group list-group-flush">
+    <li class="list-group-item">{{sessions.date}}</li>
+    <li class="list-group-item">{{sessions.ville}}</li>
+    <li class="list-group-item">{{sessions.prix}}</li>
+  </ul>
+</div>
+
+
+</div>
+
+<hr>
+
+
+
+<form [formGroup]="formData" (ngSubmit)="postInfo()" class="container">
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">First name</label>
+      <input type="text" class="form-control" id="validationDefault01" placeholder="First name" formControlName="nom"  >
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">City</label>
+      <input type="text" class="form-control" id="validationDefault03" placeholder="City" formControlName="ville" >
+    </div>
+    
+    
+  </div>
+  <div class="form-row">
+    
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault04">Email</label>
+      <input type="email" class="form-control" id="validationDefault04" formControlName="email" placeholder="Email" >
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05">Date</label>
+      <input type="date" class="form-control" id="validationDefault05" placeholder="Date" formControlName="date" >
+    </div>
+    
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05">Nb Pers</label>
+      <input type="text" class="form-control" id="validationDefault05" formControlName="nbPerson" placeholder="Nb Pers" >
+    </div>
+  </div>
+  
+
+  <button class="btn btn-dark" type="submit">Submit form</button>
+</form>

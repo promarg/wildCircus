@@ -1,0 +1,24 @@
+<h1 class="container mt-5 text-center">Nos Shows</h1>
+<p class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, nesciunt quia neque provident officiis nam! Blanditiis obcaecati, consectetur distinctio animi soluta harum quae officia aut, commodi sapiente vel sit in.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti obcaecati earum voluptas consequuntur reprehenderit molestias, quas voluptatem doloremque sapiente possimus autem repellat ea ab, ex quia amet quae! Eveniet.
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, ex ad obcaecati adipisci esse iste voluptas temporibus aut, deserunt earum aspernatur unde quisquam similique quod, labore vel incidunt? Nam, quasi.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci est nostrum corrupti. Atque dolor ratione eos, culpa harum voluptatem. Omnis odio, rem nisi fugit vitae maxime facere hic corrupti reiciendis.
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores provident recusandae dolore architecto culpa ipsum doloremque esse fugit! Ducimus, sequi nesciunt beatae rerum animi excepturi. Nisi quibusdam enim voluptatem praesentium?
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dignissimos quibusdam, nemo, rerum animi optio incidunt eveniet hic laboriosam dicta ipsa modi aliquam, suscipit fuga accusantium iusto ullam iure minima.
+
+
+
+<div class="row container-fluid">
+  <div *ngFor="let show of shows" class="card col-5 mx-auto my-5 " style="width: 10rem;">
+    <img src="/assets/{{show.img}}" class="card-img-top imgCard" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Nom: {{show.nom}}</h5>
+      <p>{{show.description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+
+
+    </ul>
+  </div>
+  </div>
+  

@@ -1,0 +1,76 @@
+#carouselExampleFade{
+    height: 65%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+
+#contact{
+    background-color: rgb(153, 127, 117);
+    height: 100%;
+    text-align: center;
+}
+
+#contact .all-contact{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact #title{
+    margin: 0;
+    font-size: 4em;
+    color: white;
+}
+
+#contact .formulaire{
+    width: 50%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+#contact input, textarea{
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 3%;
+    padding: 7px;
+
+    text-align: left;
+    background: white;
+    font-family: "Roboto";
+    
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+}
+
+#contact textarea{
+    height: 200px;
+}
+
+#contact button{
+    width: 30%;
+    padding: 10px;
+    background: #6F051D;
+    
+    font-family: "Amatic SC";
+    font-size: 1.3em;
+    color: white;
+    
+    border-radius: 10px;
+    border: none;
+    
+    transition: ease-in-out 0.2s;
+}
+
+#contact button:hover{
+    transform: scale(0.9);
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
